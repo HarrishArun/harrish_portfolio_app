@@ -2,7 +2,7 @@
 
 
     <application
-        android:label="harrish_portfolio"
+        android:label="HarrishArun"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

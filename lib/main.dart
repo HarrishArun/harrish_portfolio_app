@@ -1,9 +1,6 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
-import 'package:flutter/gestures.dart';
-import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -68,7 +65,6 @@ class _HomeScreenState extends State<HomeScreen> {
               ? Stack(
                   children: [
                     InAppWebView(
-                      onZoomScaleChanged: false,
                       initialUrlRequest: URLRequest(url: WebUri(url)),
                       onWebViewCreated: (controller) {
                         webViewController = controller;
